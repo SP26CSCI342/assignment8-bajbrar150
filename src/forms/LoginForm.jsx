@@ -3,6 +3,9 @@ import { useNavigate, Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import "./Forms.css";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+
 function LoginForm() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -29,7 +32,7 @@ function LoginForm() {
     }
 
     try {
-      const response = await fetch("/api/login", {
+      const response = await fetch(`${API_BASE_URL}/api/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),

@@ -3,7 +3,6 @@
 const SEARCH_PATH = "/api/yelp/businesses/search";
 
 async function searchBusinesses(term, location, sortBy) {
-  // Create query params
   const params = new URLSearchParams({
     term,
     location,
@@ -11,18 +10,14 @@ async function searchBusinesses(term, location, sortBy) {
     limit: "20",
   });
 
-  // Fetch from your proxy
   const res = await fetch(`${SEARCH_PATH}?${params}`);
 
-  // Error handling
   if (!res.ok) {
     throw new Error(`Yelp request failed (${res.status})`);
   }
 
-  // Convert to JSON
   const data = await res.json();
 
-  // Map Yelp data → your Business format
   return data.businesses.map((business) => ({
     id: business.id,
     imageSrc: business.image_url,
