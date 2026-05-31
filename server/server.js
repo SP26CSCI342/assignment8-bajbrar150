@@ -12,6 +12,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
+      "https://assignment8-bajbrar150.vercel.app",
       /\.vercel\.app$/,
     ],
     credentials: true,
