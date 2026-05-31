@@ -3,9 +3,9 @@ Assignment Lab #8
 
 ## Live URLs
 
-- **Client:** https://platescout-yourname.vercel.app
-- **Server:** https://platescout-yourname.onrender.com
-- **Server health check:** https://platescout-yourname.onrender.com/api/health
+- **Client:** assignment8-bajbrar150.vercel.app
+- **Server:** https://platescout-bajbrar.onrender.com
+- **Server health check:** https://platescout-bajbrar.onrender.com/api/health
 
 ## Local setup
 
