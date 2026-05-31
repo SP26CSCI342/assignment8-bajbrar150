@@ -1,0 +1,65 @@
+.Footer {
+    /* YOUR STYLE HERE */
+    /* Set background-color to #121417, color to #888, and padding to 2.2rem 2rem */
+    /* Set font-family to 'Work Sans', sans-serif, and font-size to .85rem */
+    background-color: #121417;
+    color: #888;
+    padding: 2.2rem 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: .85rem;
+}
+
+.Footer-content {
+    /* YOUR STYLE HERE */
+    /* Set display to flex and justify-content to space-between */
+    /* Set align-items to center and max-width to 80rem */
+    /* Set margin to 0 auto */
+    /* Set gap to 1rem and flex-wrap to wrap */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.Footer-copyright {
+    margin: 0;
+}
+
+.Footer-links {
+    display: flex;
+    gap: 1.8rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .25s;
+}
+
+.Footer-links a:hover {
+    color: #cca353;
+}
+
+@media only screen and (max-width: 560px) {
+    .Footer {
+        padding: 1.8rem 1.5rem;
+    }
+
+    .Footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Footer-links {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
